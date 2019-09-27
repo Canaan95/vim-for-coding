@@ -73,7 +73,7 @@ set autoread
 set wildignore=*.swp,*.bak,*.pyc,*.class,.svn
 
 " 突出显示当前列
-set cursorcolumn
+"set cursorcolumn
 " 突出显示当前行
 set cursorline
 
@@ -125,7 +125,7 @@ set showcmd
 set showmode
 
 " 在上下移动光标时，光标的上方或下方至少会保留显示的行数
-set scrolloff=7
+"set scrolloff=7
 
 " set winwidth=79
 
@@ -414,30 +414,30 @@ au BufWritePost *.c,*.cpp,*.h,*.php,*.json,*.erl,*.sh,*.html,*.css,*.conf silent
 set ai si ci
 
 "--------------------------自定义快捷键---------------------
-map Y y$
-map <space> /
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
-map <C-n> :bnext<cr>
-map <C-p> :bprev<cr>
-map <C-w> :w<cr>
+"map Y y$
+"map <space> /
+"map <C-j> <C-W>j
+"map <C-k> <C-W>k
+"map <C-h> <C-W>h
+"map <C-l> <C-W>l
+"map <C-n> :bnext<cr>
+"map <C-p> :bprev<cr>
+"map <C-w> :w<cr>
 " select all
-map <Leader>sa ggVG
-map <Leader>i :noh<cr>
-map <leader>zz :call ToggleFold()<cr>
-map <leader>1 :bfirst<cr>
-map <leader>2 :b2<cr>
-map <leader>3 :b3<cr>
-map <leader>4 :b4<cr>
-map <leader>5 :b5<cr>
-map <leader>6 :b6<cr>
-map <leader>7 :b7<cr>
-map <leader>8 :b8<cr>
-map <leader>9 :b9<cr>
-map <leader>0 :blast<cr>
-map <leader>d :bd<cr>
+"map <Leader>sa ggVG
+"map <Leader>i :noh<cr>
+"map <leader>zz :call ToggleFold()<cr>
+"map <leader>1 :bfirst<cr>
+"map <leader>2 :b2<cr>
+"map <leader>3 :b3<cr>
+"map <leader>4 :b4<cr>
+"map <leader>5 :b5<cr>
+"map <leader>6 :b6<cr>
+"map <leader>7 :b7<cr>
+"map <leader>8 :b8<cr>
+"map <leader>9 :b9<cr>
+"map <leader>0 :blast<cr>
+"map <leader>d :bd<cr>
 
 " 快速运行当前php文件
 " map <leader>r :!php %<cr>
@@ -472,8 +472,8 @@ nnoremap ; :
 cnoremap <C-a> <Home>
 " 搜索相关
 " 进入搜索Use sane regexes"
-nnoremap / /\v
-vnoremap / /\v
+"nnoremap / /\v
+"vnoremap / /\v
 " Keep search pattern at the center of the screen.
 nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
@@ -508,7 +508,7 @@ imap <C-l> <C-x><C-o>
 " autocmd BufWritePre * :%retab!
 
 " 设置为搜索时不要回卷
-set nowrapscan
+set wrapscan
 
 " 设置选中背景
 hi Visual term=reverse cterm=reverse ctermbg=black guibg=grey60
